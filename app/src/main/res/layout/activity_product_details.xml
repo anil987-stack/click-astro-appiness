@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp">
+
+
+        <ImageView
+            android:id="@+id/productIc"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_book" />
+
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/productIc"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/open_sans_med"
+            android:text="@string/printed_horoscope_book"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/productPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/productName"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/open_sans_semi"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:text="$9000" />
+
+        <TextView
+            android:id="@+id/productDes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/productPrice"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/open_sans_reg"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            tools:text="Want to know about your career, health, wealth, family and more on year 2023. Get a Yearly Horoscope for 2023 now." />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@id/productDes"
+            android:layout_marginTop="10dp"
+            android:alpha="0.2"
+            android:background="#878787" />
+
+        <TextView
+            android:id="@+id/productDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/open_sans_med"
+            android:text="@string/product_details"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/pageLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/productDetails"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans_reg"
+                android:text="@string/pages"
+                android:textColor="#878787"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/pageTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans_med"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:text="6" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/authLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pageLinear"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans_reg"
+                android:text="@string/authentic"
+                android:textColor="#878787"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/authTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans_med"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:text="Authentic" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/remediesLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/authLinear"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans_reg"
+                android:text="@string/remedies"
+                android:textColor="#878787"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/remediesTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans_med"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:text="Remedies" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vedicLinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/remediesLinear"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans_reg"
+                android:text="@string/vedic"
+                android:textColor="#878787"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/vedicTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/open_sans_med"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:text="Vedic Astrology" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_two"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@id/vedicLinear"
+            android:layout_marginTop="10dp"
+            android:alpha="0.2"
+            android:background="#878787" />
+
+
+        <TextView
+            android:id="@+id/avlLang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_two"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/open_sans_med"
+            android:text="@string/avaliable_languages"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_languages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/avlLang"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_language" />
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

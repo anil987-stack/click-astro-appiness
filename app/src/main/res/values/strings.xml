@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">appiness task</string>
+    <string name="printed_horoscope_book">Printed Horoscope Book</string>
+    <string name="avaliable_languages">Available Languages</string>
+    <string name="product_details">Product Details</string>
+    <string name="authentic">Authentic</string>
+    <string name="remedies">Remedies</string>
+    <string name="vedic">Vedic</string>
+    <string name="pages">Pages</string>
+</resources>
